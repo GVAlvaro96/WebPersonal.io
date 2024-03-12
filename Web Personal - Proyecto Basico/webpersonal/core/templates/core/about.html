@@ -1,0 +1,42 @@
+{% extends 'core/base.html' %}
+
+{% block title %}{% endblock %}
+{% block styles %} {% endblock %} 
+    
+
+
+<!-- Navegación -->
+{% block cabecera %}{% endblock %}
+
+<!-- Cabecera -->
+{% block background %}{%load static %}{% static 'core/img/about-bg.jpg' %}{% endblock %}
+{% block headers %}
+    <h1>Acerca de</h1>
+    <span class="subheading">Biografía</span>
+{% endblock %}
+
+{% block cuerpo %}
+<div class="row">   
+  <div class="col-lg-3 col-md-4 offset-lg-1">
+    <img class="img-fluid avatar" src="img/avatar.jpg" alt="">
+  </div>
+  <div class="col-lg-7 col-md-8">
+    <h2 class="section-heading">Álvaro García</h2>   
+
+    <p>¡Hola! Soy Álvaro García Velasco un apasionado desarrollador de software con base en Madrid. Nací en 1996 y crecí inmerso en el fascinante mundo de la tecnología. Mi viaje profesional comenzó en la Universidad Rey Juan Carlos, donde completé mi grado en Ingeniería del Software en el campus de Móstoles.</p>
+    <p>Desde entonces, he estado dedicando mi tiempo y energía al desarrollo de soluciones innovadoras y eficientes. Mi formación académica proporcionó la base sólida necesaria, y mi experiencia práctica ha ampliado mis habilidades y conocimientos en el campo del desarrollo de software.</p>
+    <p>Actualmente, me desempeño como Software Engineer, donde he tenido la oportunidad de trabajar en proyectos desafiantes que han contribuido al crecimiento y éxito de mi equipo. Mi enfoque se centra en crear aplicaciones robustas y escalables que no solo cumplan, sino que superen las expectativas.</p>
+    <p>En mi rol actual como Software Engineer, me especializo en el desarrollo backend, destacando en el uso de Python como mi lenguaje principal. He trabajado en proyectos desafiantes que involucran la implementación de sistemas robustos, la gestión eficiente de datos y la integración con diversas bases de datos.</p>
+    <p>Estoy emocionado por la posibilidad de contribuir a proyectos ambiciosos y formar parte de equipos que busquen la excelencia en el desarrollo de software. Siempre estoy abierto a nuevas oportunidades y colaboraciones. ¡Contáctame y exploremos juntos las posibilidades emocionantes que el mundo del desarrollo de software tiene para ofrecer!</p>
+    <p>¡Gracias por visitar mi página!</p>
+  </div>
+</div>  
+{% endblock %}
+
+
+<!-- Pié de página -->
+{% block footer %}{% endblock %}
+    
+<!-- JS -->
+{% block Javascripts %}{% endblock %}
+
