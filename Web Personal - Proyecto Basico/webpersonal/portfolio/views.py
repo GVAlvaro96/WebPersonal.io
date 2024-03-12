@@ -6,3 +6,6 @@ def portfolio(request):
     projects = Project.objects.all()
     context ={'projects': projects}
     return render(request,"portfolio/portfolio.html", context)
+
+def fcshot(request):
+    return render(request, 'portfolio/fcshot.html')

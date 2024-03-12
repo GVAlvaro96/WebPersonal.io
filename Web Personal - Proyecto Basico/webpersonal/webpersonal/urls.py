@@ -24,8 +24,9 @@ from django.conf  import settings
 urlpatterns = [
     path('', core_views.home, name="home"),
     path('about-me/', core_views.about, name="about"),
-    path('portfolio/', portfolio_views.portfolio ,name="portfolio"),
     path('contact/', core_views.contact, name="contact"),
+    path('portfolio/', portfolio_views.portfolio ,name="portfolio"),
+    path('portfolio/fcshot/', portfolio_views.fcshot ,name="fcshot"),
     path('admin/', admin.site.urls),
 ]
 
