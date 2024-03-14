@@ -9,3 +9,9 @@ def portfolio(request):
 
 def fcshot(request):
     return render(request, 'portfolio/fcshot.html')
+
+def webpersonal(request):
+    return render(request, 'portfolio/webpersonal.html')
+
+def webempresarial(request):
+    return render(request, 'portfolio/caffettiera.html')

@@ -1,0 +1,49 @@
+{% extends 'core/base.html' %}
+
+{% block title %}{% endblock %}
+{% block styles %} {% endblock %} 
+    
+
+
+<!-- Navegación -->
+{% block cabecera %}{% endblock %}
+
+<!-- Cabecera -->
+{% block background %}{%load static %}{% static 'core/img/bg.jpg' %}{% endblock %}
+{% block headers %}
+    <h1>La Caffettiera</h1>
+    <span class="subheading">Proyecto</span>
+{% endblock %}
+
+
+<!-- Contenido Principal -->
+{% block cuerpo %}
+
+		<!-- Proyecto -->
+		<div class="row project">  	
+			<div class="col-lg-3 col-md-4 offset-lg-1">
+					<img class="img-fluid" src="{{project.image.url}}" alt="">
+			</div>
+			<div class="col-lg-7 col-md-8">
+				<h2 class="section-heading title"><b>Descripción de la Web: La Caffettiera</b></h2>   
+				<p>La Caffettiera es una plataforma web empresarial diseñada para la cafetería del mismo nombre. Desarrollada utilizando Python y el framework Django, esta aplicación web ofrece una experiencia integral para los usuarios, combinando elementos estáticos y dinámicos para una experiencia envolvente. Las partes estáticas, construidas con HTML, CSS y la librería Bootstrap, proporcionan una base sólida y atractiva para la presentación de información sobre la cafetería, incluyendo su historia, menú y ubicación.</p>
+                <p>Por otro lado, las características dinámicas agregan funcionalidades esenciales, como un blog donde se pueden crear y gestionar entradas, permitiendo a la cafetería compartir noticias, recetas y eventos. La gestión de contactos facilita a los usuarios la comunicación con la empresa, ofreciendo enlaces directos para consultas y reservas. Además, un formulario integrado permite a los clientes enviar mensajes directamente al equipo de la cafetería, mejorando la comunicación y el servicio al cliente.</p>
+                <p>Una de las características más destacadas es la sección de entradas recientes, que muestra las últimas actualizaciones y ofertas de la cafetería, manteniendo a los visitantes informados sobre las novedades más relevantes. En resumen, La Caffettiera es una poderosa herramienta digital que combina la estética atractiva con la funcionalidad práctica, brindando a la cafetería una presencia en línea sólida y efectiva.</p>
+                <h3>Repositoprio de github:</h3>
+                <a href="https://github.com/GVAlvaro96/webEmpresarial">
+                    <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                    </span>
+                </a>
+
+            </div>
+		</div>
+
+{% endblock %}
+
+<!-- Pié de página -->
+{% block footer %}{% endblock %}
+    
+<!-- JS -->
+{% block Javascripts %}{% endblock %}

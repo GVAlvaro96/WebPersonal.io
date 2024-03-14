@@ -12,16 +12,16 @@
 {% block background %}{%load static %}{% static 'core/img/contact-bg.jpg' %}{% endblock %}
 {% block headers %}
     <h1>Contacto</h1>
-    <span class="subheading">Asesoría</span>
+    <span class="subheading"> y CV</span>
 {% endblock %}
 
 {% block cuerpo %}
       <div class="row">
         <div class="col-lg-8 col-md-10 mx-auto">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe nostrum ullam eveniet pariatur voluptates odit, fuga atque ea nobis sit soluta odio, adipisci quas excepturi maxime quae totam ducimus consectetur?</p>
+          <p><b>Si quieres acceder a mi curriculum vitae pulsa el siguiente boton:</b></p>
+          <p><button><a href="{%  static 'core/files/CV.pdf' %}" download="{% static 'core/files/CV.pdf' %}">Descargar CV</a></button></p>
           <br>
-          <p><b>Teléfono:</b> +09 876 543 210</p>
-          <p><b>Honorarios:</b> 60€/h (precio base)</p>
+          <p><b>Email:</b> alvaro.garciavelasco96@gmail.com</p>
         </div>
       </div>
 {% endblock %}
