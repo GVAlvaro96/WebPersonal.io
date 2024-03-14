@@ -27,6 +27,8 @@ urlpatterns = [
     path('contact/', core_views.contact, name="contact"),
     path('portfolio/', portfolio_views.portfolio ,name="portfolio"),
     path('portfolio/fcshot/', portfolio_views.fcshot ,name="fcshot"),
+    path('portfolio/webpersonal/', portfolio_views.webpersonal ,name="webpersonal"),
+    path('portfolio/caffettiera/', portfolio_views.webempresarial ,name="caffettiera"),
     path('admin/', admin.site.urls),
 ]
 

@@ -1,0 +1,65 @@
+{% extends 'core/base.html' %}
+
+{% block title %}{% endblock %}
+{% block styles %} {% endblock %} 
+    
+
+
+<!-- Navegación -->
+{% block cabecera %}{% endblock %}
+
+<!-- Cabecera -->
+{% block background %}{%load static %}{% static 'core/img/django.png' %}{% endblock %}
+{% block headers %}
+    <h1>WEB PERSONAL</h1>
+    <span class="subheading">Proyecto</span>
+{% endblock %}
+
+
+<!-- Contenido Principal -->
+{% block cuerpo %}
+
+		<!-- Proyecto -->
+		<div class="row project">  	
+			<div class="col-lg-3 col-md-4 offset-lg-1">
+					<img class="img-fluid" src="{{project.image.url}}" alt="">
+			</div>
+			<div class="col-lg-7 col-md-8">
+				<h2 class="section-heading title"><b>Descripción del Proyecto: Web Personal con Django</b></h2>   
+				<p>Bienvenido a mi proyecto de desarrollo web personal, creado con Python y el framework Django. Esta web ofrece una plataforma interactiva donde puedo compartir información sobre mí, facilitar el contacto y exhibir mi portafolio de proyectos software.</p>
+                <p><b>Características Principales:</b></p>
+                <ul>
+                    <li><p><b>Información Personal:</b> Este apartado brinda detalles sobre mi experiencia, habilidades y trayectoria profesional. Los visitantes pueden conocerme mejor y comprender mi enfoque en el desarrollo de software.</p></li>
+                    <li><p><b>Sección de Contacto: </b> Aquí, los usuarios tienen la oportunidad de comunicarse conmigo de manera directa. Proporciono diversas opciones de contacto, como correo electrónico, formulario de contacto y enlaces a mis redes sociales, para garantizar una fácil interacción.</p></li>
+                    <li><p><b>Portafolio de Proyectos: </b>En esta sección, presento una selección de los proyectos software más destacados en los que he trabajado. Cada proyecto incluye una breve descripción, tecnologías utilizadas y enlaces relevantes, lo que permite a los visitantes explorar mi experiencia y habilidades en acción.</p></li>
+                </ul>
+                <p><b>Tecnologías Utilizadas:</b></p>
+                <ul>
+                    <li><p><b>Python: </b> Utilizado como el lenguaje principal de desarrollo, proporcionando una base sólida y flexible para el proyecto.</p></li>
+                    <li><p><b>Django: </b> Este framework web de alto nivel de Python ha sido fundamental para la creación de una estructura robusta y eficiente, facilitando el desarrollo rápido y la gestión de la aplicación web.</p></li>
+                </ul>
+                <p><b>Beneficios para los Usuarios:</b></p>
+                <ul>
+                    <li><p><b>Acceso Centralizado:</b> Los visitantes pueden encontrar toda la información relevante sobre mí y mis proyectos en un solo lugar, simplificando su experiencia de navegación.</p></li>
+                    <li><p><b>Comunicación Directa: </b> El apartado de contacto proporciona múltiples canales para interactuar conmigo, fomentando la comunicación abierta y la colaboración potencial en futuros proyectos.</p></li>
+                    <li><p><b>Exploración de Proyectos: </b>La sección de portafolio permite a los usuarios explorar y evaluar fácilmente mis habilidades y experiencia a través de ejemplos concretos de proyectos software completados con éxito.</p></li>
+                </ul>
+                <p>Mi web personal con Django es más que una simple presencia en línea; es un reflejo de mi pasión por el desarrollo de software y mi compromiso con la excelencia profesional. ¡Explora mi web y únete a mí en el emocionante mundo de la tecnología!</p>
+                <h3>Repositoprio de github:</h3>
+                <a href="https://github.com/GVAlvaro96/WebPersonal.git">
+                    <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                    </span>
+                </a>
+
+            </div>
+		</div>
+
+{% endblock %}
+
+<!-- Pié de página -->
+{% block footer %}{% endblock %}
+    
+<!-- JS -->
+{% block Javascripts %}{% endblock %}
