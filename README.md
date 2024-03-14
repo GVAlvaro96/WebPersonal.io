@@ -21,7 +21,7 @@ Este repositorio alberga el código fuente de mi web personal, diseñada para pr
 
 1. Clona este repositorio en tu máquina local:
 
-`git clone https://github.com/tu_usuario/tu_proyecto.git`
+`git clone https://github.com/tu_usuario/tu_proyecto.git](https://github.com/GVAlvaro96/WebPersonalAlvaro.io.git`
 
 2. Instala las dependencias necesarias utilizando pip:
 
@@ -31,7 +31,7 @@ Este repositorio alberga el código fuente de mi web personal, diseñada para pr
 
 `python manage.py runserver`
 
-4. Abre tu navegador y visita `http://localhost:8000` para ver la web en funcionamiento.
+4. Abre tu navegador y visita `http://http://127.0.0.1:8000` para ver la web en funcionamiento.
 
 ## Contribución
 
