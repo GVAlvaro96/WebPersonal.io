@@ -18,6 +18,64 @@
 {% block cuerpo %}
       <div class="row">
         <div class="col-lg-8 col-md-10 mx-auto">
+          <div id="pdfViewer"></div>
+
+          <script>
+            // Función para cargar y mostrar el PDF dentro del div
+            function showPDF(pdfURL, container) {
+              // Crea un objeto de configuración para PDF.js
+              const pdfConfig = {
+                url: pdfURL, // Utiliza la URL proporcionada como argumento
+                withCredentials: false
+              };
+
+              // Carga el PDF
+              pdfjsLib.getDocument(pdfConfig).promise.then(pdf => {
+                // Crea un elemento canvas para mostrar el PDF
+                const pdfViewer = document.createElement('canvas');
+
+                // Añade el canvas al contenedor
+                container.appendChild(pdfViewer);
+
+                // Muestra las páginas del PDF
+                for (let pageNumber = 1; pageNumber <= pdf.numPages; pageNumber++) {
+                  pdf.getPage(pageNumber).then(page => {
+                    const viewport = page.getViewport({ scale: 1 });
+                    const canvas = document.createElement('canvas');
+                    const context = canvas.getContext('2d');
+
+                    // Establece el tamaño del canvas
+                    canvas.width = viewport.width;
+                    canvas.height = viewport.height;
+
+                    // Dibuja la página del PDF en el canvas
+                    page.render({
+                      canvasContext: context,
+                      viewport: viewport
+                    }).promise.then(() => {
+                      // Añade el canvas al contenedor
+                      container.appendChild(canvas);
+                    });
+                  });
+                }
+              }).catch(error => {
+                // Maneja cualquier error que ocurra durante la carga o la renderización del PDF
+                console.error("Error al cargar o mostrar el PDF:", error);
+              });
+            }
+
+            // Llama a la función showPDF cuando se carga la página
+            window.addEventListener('load', function() {
+              const pdfURL = '/home/alvarogv/Documentos/GitHub/WebPersonal/Web Personal - Proyecto Basico/webpersonal/core/static/core/files/CV'; // Ruta al PDF
+              const container = document.getElementById('pdfViewer'); // Contenedor div
+
+              // Muestra el PDF dentro del div
+              showPDF(pdfURL, container);
+            });
+
+          </script>
+        </div>
+        <div class="col-lg-8 col-md-10 mx-auto">
           <p><b>Si quieres acceder a mi curriculum vitae pulsa el siguiente boton:</b></p>
           <p><button><a href="{%  static 'core/files/CV.pdf' %}" download="{% static 'core/files/CV.pdf' %}">Descargar CV</a></button></p>
           <br>

@@ -1,0 +1,54 @@
+{% extends 'core/base.html' %}
+
+{% block title %}{% endblock %}
+{% block styles %} {% endblock %} 
+    
+
+
+<!-- Navegación -->
+{% block cabecera %}{% endblock %}
+
+<!-- Cabecera -->
+{% block background %}{%load static %}{% static 'core/img/playground.jpg' %}{% endblock %}
+{% block headers %}
+    <h1>Bienvenido a Web Playground</h1>
+    <span class="subheading">Proyecto</span>
+{% endblock %}
+
+
+<!-- Contenido Principal -->
+{% block cuerpo %}
+
+		<!-- Proyecto -->
+		<div class="row project">  	
+			<div class="col-lg-3 col-md-4 offset-lg-1">
+					<img class="img-fluid" src="{{project.image.url}}" alt="">
+			</div>
+			<div class="col-lg-7 col-md-8">
+				<h2 class="section-heading title"><b>Descripción de la Web: Web Playground</b></h2>   
+				<section>
+                    <p>¡Explora el potencial completo de Django con nosotros!</p>
+                    <p>En Web Playground, aprovechamos al máximo las Vistas Basadas en Clases (CBV) para brindarte una experiencia de desarrollo elegante y eficiente. Con nuestros modelos de vistas CBV, podrás estructurar tu código de manera clara y concisa, facilitando su mantenimiento y escalabilidad.</p>
+                    <p>La autenticación de usuarios es una parte fundamental de cualquier aplicación web, y en Web Playground, te ofrecemos un sistema de autenticación seguro y robusto. Con nuestras funciones de autenticación de usuario integradas, puedes estar seguro de que tus datos están protegidos y tus usuarios pueden acceder de manera segura a la plataforma.</p>
+                    <p>Además, en Web Playground, entendemos la importancia de crear perfiles de usuario personalizados. Con nuestra funcionalidad de creación de perfiles de usuario, los usuarios pueden personalizar su experiencia en la plataforma y compartir información relevante sobre ellos mismos.</p>
+                    <p>Pero eso no es todo. En Web Playground, también hemos implementado un sistema de mensajería atemporal que permite a los usuarios comunicarse entre sí de manera fácil y eficiente. Ya sea para coordinar proyectos, discutir ideas o simplemente socializar, nuestro sistema de mensajería garantiza una comunicación fluida y sin problemas.</p>
+                    <p>Únete a nosotros en Web Playground y descubre un mundo de posibilidades con Django. ¡Explora, crea y conecta en tu nuevo patio de recreo en la web!</p>
+                  </section>
+                <h3>Repositoprio de github:</h3>
+                <a href="https://github.com/GVAlvaro96/WebPlayground.git">
+                    <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                    </span>
+                </a>
+
+            </div>
+		</div>
+
+{% endblock %}
+
+<!-- Pié de página -->
+{% block footer %}{% endblock %}
+    
+<!-- JS -->
+{% block Javascripts %}{% endblock %}

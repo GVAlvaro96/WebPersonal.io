@@ -15,3 +15,6 @@ def webpersonal(request):
 
 def webempresarial(request):
     return render(request, 'portfolio/caffettiera.html')
+
+def playground(request):
+    return render(request, 'portfolio/playground.html')
