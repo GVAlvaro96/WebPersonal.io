@@ -29,6 +29,7 @@ urlpatterns = [
     path('portfolio/fcshot/', portfolio_views.fcshot ,name="fcshot"),
     path('portfolio/webpersonal/', portfolio_views.webpersonal ,name="webpersonal"),
     path('portfolio/caffettiera/', portfolio_views.webempresarial ,name="caffettiera"),
+    path('portfolio/playground/', portfolio_views.playground ,name="playground"),
     path('admin/', admin.site.urls),
 ]
 
